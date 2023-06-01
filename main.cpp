@@ -1,5 +1,4 @@
 #include "widget.h"
-#include "framelessWidget.h"
 #include <QApplication>
 #include <QSplashScreen>
 #include <QThread>
@@ -9,7 +8,7 @@ int main(int argc, char *argv[])
     Q_INIT_RESOURCE(resources);
     //---------------开始界面-----------------------//
     QSplashScreen *startScreen = new QSplashScreen();
-    startScreen->setPixmap(QPixmap("D:/Pictures/Screenshots/bar.png"));
+    startScreen->setPixmap(QPixmap("D:/Pictures/Screenshots/bar.png"));//开始界面图片，得ps一个
     startScreen->show();
     Qt::Alignment bottomLeft = Qt::AlignRight | Qt::AlignBottom;
     QFont splashFont;
